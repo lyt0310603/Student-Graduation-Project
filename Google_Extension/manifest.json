@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "巴哈姆特 中央串分析",
+  "description": "巴哈姆特 中央串分析",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false 
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://128.199.218.40/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://forum.gamer.com.tw/C.php?*snA=4671705*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
