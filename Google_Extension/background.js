@@ -73,7 +73,7 @@ async function ConnectToBackend(content){
 chrome.tabs.onUpdated.addListener(
     function(tabId, changeInfo, tab){
         if(changeInfo.status === 'complete'){
-            if (tab.url.includes('snA=4671705') && flag){
+            if (tab.url.includes('snA=4671705')){
                 RequireContent()
             }
         }        

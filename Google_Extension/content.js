@@ -27,7 +27,7 @@ function AddLabel(m){
             var newtext = document.createElement("div")
             var label = '\n\n'
             label += '#'
-            label += m[i][j]
+            label += m[i][0]
             label += ' '
             newtext.textContent = label
             newtext.setAttribute('class', 'label')
