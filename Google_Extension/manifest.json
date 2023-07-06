@@ -1,20 +1,24 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "巴哈姆特 中央串分析",
   "description": "巴哈姆特 中央串分析",
   "version": "1.0.0",
-  "browser_action": {
+  "icons": {
+    "16": "logo_16.png",
+    "48": "logo_48.png",
+    "128": "logo_128.png"
+  },
+  "action": {
     "default_popup": "popup.html"
   },
   "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": false 
+    "service_worker": "background.js"
   },
   "permissions": [
     "activeTab",
-    "tabs",
+    "tabs"
+  ],
+  "host_permissions": [
     "http://128.199.218.40/*"
   ],
   "content_scripts": [
