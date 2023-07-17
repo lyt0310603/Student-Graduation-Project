@@ -9,4 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
           };
       })();
   }
+
+  var button_open = document.getElementById("open")
+  var button_close = document.getElementById("close")
+  button_open.onclick = function(){
+    chrome.runtime.sendMessage({content: "open"})
+  }
+  button_close.onclick = function(){
+    chrome.runtime.sendMessage({content: "close"})
+  }
 });

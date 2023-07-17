@@ -54,25 +54,25 @@ async function ConnectToBackend(content){
 }
 
 // 待修改
-// var flag = true
+var flag = true
 
-// chrome.runtime.onMessage.addListener(
-//     function(message){
-//         if(message.content == 'start'){
-//             flag = true
-//             chrome.tabs.reload()
-//         }            
-//         if(message.content == 'end'){
-//             flag = false
-//             chrome.tabs.reload()
-//         }            
-//     }
-// )
+chrome.runtime.onMessage.addListener(
+    function(message){
+        if(message.content == 'open'){
+            flag = true
+            chrome.tabs.reload()
+        }            
+        if(message.content == 'close'){
+            flag = false
+            chrome.tabs.reload()
+        }            
+    }
+)
 
 // if open the Bahamut NCU page then submit a request to get article
 chrome.tabs.onUpdated.addListener(
     function(tabId, changeInfo, tab){
-        if(changeInfo.status === 'complete'){
+        if(changeInfo.status === 'complete' && flag){
             if (tab.url.includes('snA=4671705')){
                 RequireContent()
             }
