@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "巴哈姆特 中央串分析",
   "description": "巴哈姆特 中央串分析",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icons": {
     "16": "logo_16.png",
     "48": "logo_48.png",
