@@ -31,6 +31,7 @@
 ## Google Extension
 ### Download Link: [Here](https://chrome.google.com/webstore/detail/%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9-%E4%B8%AD%E5%A4%AE%E4%B8%B2%E5%88%86%E6%9E%90/cffglllonpmkobnlbcbechbnmocaadhl)
 ### Use background.js to check the page updete, and if the page is Bahamut NCU then send a reuest ro content.js to get article contents. After get contents, send it to backend.
+### After open extension ![](https://cdn.discordapp.com/attachments/1122916420192309321/1130743346646749194/2023-07-05_210959.png)
 
 ## Backend
 ### Use Flask to build a beckend, and return predict output to extension.
